@@ -62,14 +62,14 @@ def predict():
     pred_tmp= model.predict(tmp)
     if pred_tmp == 0:
         if inputs[1]== "0":
-            return render_template('results.html', prediction_text= "Felicitations Madame, vous allez bien :)))))")
+            return render_template('results.html', prediction_text= "Felicitations Madame, vous vous portez bien ")
         else:
-                    return render_template('results.html', prediction_text= "Felicitations Monsieur, vous allez bien :)))))")
+                    return render_template('results.html', prediction_text= "Felicitations Monsieur, vous vous portez bien")
     else:
         if inputs[1]== "0":
-           return render_template('results.html', prediction_text= "WESH??!! C'est la MERDE sista!!")
+           return render_template('results.html', prediction_text= "Attention Madame, vous presentez des risques de maladies cardiaques")
         else:
-           return render_template('results.html', prediction_text= "WESH??!! C'est la MERDE kho!!!")
+           return render_template('results.html', prediction_text= "Attention Monsieur, vous presentez des risques de maladies cardiaques")
 
 
     
